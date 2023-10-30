@@ -8,7 +8,9 @@ E abaixo você encontra informações IMPORTANTES, não deixe de ler!
 
 ## Instalação do Android Studio
 
-Veja aqui o [tutorial de instalação do Android Studio](https://github.com/gilfernandesjr/disciplina_devmobile/blob/main/Manual%20de%20Instala%C3%A7%C3%A3o%20-%20Android%20Studio.pdf)
+Veja aqui o [tutorial de instalação do Android Studio](https://github.com/gilfernandesjr/disciplina_devmobile/blob/main/Manual%20de%20Instala%C3%A7%C3%A3o%20-%20Android%20Studio.pdf)  
+Veja aqui o [tutorial de instalação do Java no Pop_Os](https://www.fosslinux.com/41519/how-to-install-java-on-pop_os.htm)  
+
 
 ## Importando um projeto para o Android Studio
 
