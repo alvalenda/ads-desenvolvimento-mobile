@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="Imagem Brasil"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_app" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Digite o estado:" />
+
+        <EditText
+            android:id="@+id/editTextEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o Estado aqui"
+            android:inputType="textCapCharacters"
+            android:maxLength="2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Digite o Valor da Mercadoria:"
+            android:layout_marginTop="15dp"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/editTextValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o Valor aqui"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="15dp"/>
+
+        <!--Este LinearLayout é incluído para que
+        possamos definir uma cor de fundo para apenas
+        os seus elementos-filhos-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e5efff"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Porcentagem do ICMS:"
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/textViewPorcentagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Valor Total da Mercadoria:"
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/textViewTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="R$ 0,00"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:onClick="calcular"/>
+    </LinearLayout>
+
+    <!-- OBS: Não vimos na aula, mas o tamanho padrão do texto deste layout está definido no
+      arquivo "themes.xml" dentro do diretório res/values/themes
+      Desta forma, podemos definir uma propriedade que será aplicada a todo o
+      layout de uma vez. Isso é uma prática muito utilizada e que vale a pena
+      explorar este arquivo "themes.xml" e como personalizar temas prórios
+      para seus projetos -->
+
+</ScrollView>
