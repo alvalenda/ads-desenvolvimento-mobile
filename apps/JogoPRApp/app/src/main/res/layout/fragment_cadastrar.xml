@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/cadastrarFragment"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".CadastrarFragment"
+android:layout_margin="10dp">
+
+<TextView
+    android:id="@+id/textoPergunta"
+    style="@style/textoPadrao"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:text="Qual a pergunta?" />
+
+<EditText
+    android:id="@+id/editPergunta"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_below="@id/textoPergunta"
+    android:layout_alignParentLeft="true"
+    android:hint="Pergunta"/>
+
+<TextView
+    android:id="@+id/textoResposta"
+    style="@style/textoPadrao"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/editPergunta"
+    android:layout_alignParentLeft="true"
+    android:text="Qual a pergunta?" />
+
+<EditText
+    android:id="@+id/editResposta"
+    android:layout_width="match_parent"
+    android:textSize="20sp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/textoResposta"
+    android:layout_alignParentLeft="true"
+    android:hint="Pergunta"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true">
+
+    <Button
+        android:id="@+id/botaoCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Cadastrar"
+        android:textSize="18sp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/botaoJogar"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginLeft="15dp"
+        android:text="Jogar"
+        android:drawableRight="@android:drawable/ic_media_play"
+        android:textSize="18sp"
+        android:layout_weight="0"/>
+
+</LinearLayout>
+
+</RelativeLayout>
